@@ -1,4 +1,4 @@
-![Banqo](https://user-images.githubusercontent.com/24854541/105562094-ad5a8400-5cf7-11eb-8521-6364f8bdd60f.png)
+![Banqo](https://user-images.githubusercontent.com/24854541/105562486-142c6d00-5cf9-11eb-93ec-0ee7bb202d1d.png)
 
 Recently I came across a quite curious question:
 
