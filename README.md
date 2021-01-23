@@ -59,6 +59,13 @@ python3 banqo.py --input videos/example_video.mp4
 python3 banqo.py --prototxt mobilenet_ssd/MobileNetSSD_deploy.prototxt --model mobilenet_ssd/MobileNetSSD_deploy.caffemodel --input input/example_video_in.mp4 --output output/example_video_out.avi
 ```
 
+## References
+
+[pyimagesearch/ module](https://www.pyimagesearch.com/2018/07/23/simple-object-tracking-with-opencv/)
+
+[mobilenet_ssd/ Caffe deep learning model files](https://www.pyimagesearch.com/2017/09/11/object-detection-with-deep-learning-and-opencv/)
+
+
 ![Divisor - Banqo](https://user-images.githubusercontent.com/24854541/105561762-8a7ba000-5cf6-11eb-9c1e-d19a6b190222.png)
 
 **[GNU AGPL v3.0](https://www.gnu.org/licenses/agpl-3.0.html)**
