@@ -6,7 +6,7 @@ Recently I came across a quite curious question:
 
 Even if the answer shows no immediate use in a real-world scenario, it got me thinking. I was intrigued and now *had to know* how I could answer it.
 
-The only problem is that this question does not specify *wich* London.
+The only problem is that this question does not specify *which* London.
 
 It could be the [biplane flying boat](https://en.wikipedia.org/wiki/Saro_London), the [ship](https://en.wikipedia.org/wiki/SS_London_(1864)), the [company](https://en.wikipedia.org/wiki/London_Drugs), the [music label](https://en.wikipedia.org/wiki/London_Records), or the [asteroid](https://en.wikipedia.org/wiki/8837_London). But even if you stick to the city of London, you still have a [list of cities with the same name](https://londonist.com/london/features/places-named-london-that-aren-t-the-london).
 
