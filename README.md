@@ -56,7 +56,10 @@ Example:
 python3 banqo.py --input videos/example_video.mp4
 ```
 ```shell
-python3 banqo.py --prototxt mobilenet_ssd/MobileNetSSD_deploy.prototxt --model mobilenet_ssd/MobileNetSSD_deploy.caffemodel --input input/example_video_in.mp4 --output output/example_video_out.avi
+python3 banqo.py \
+--prototxt mobilenet_ssd/MobileNetSSD_deploy.prototxt \
+--model mobilenet_ssd/MobileNetSSD_deploy.caffemodel \
+--input input/example_video_in.mp4 \
 ```
 
 ## References

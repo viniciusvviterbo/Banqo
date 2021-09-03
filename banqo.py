@@ -15,15 +15,34 @@ ap.add_argument("-p", "--prototxt", type=str, default="mobilenet_ssd/MobileNetSS
 ap.add_argument("-m", "--model", type=str, default="mobilenet_ssd/MobileNetSSD_deploy.caffemodel", help="Caminho para o modelo de CNN pré-treinado Caffe")
 ap.add_argument("-i", "--input", type=str, help="Caminho para o vídeo de input [opcional]")
 ap.add_argument("-o", "--output", type=str, help="Caminho para o vídeo de output [opcional]")
-ap.add_argument("-c", "--confidence", type=float, default=0.4, help="Probabilidade mínima para filtragem de detecções fracas")
+ap.add_argument("-c", "--confidence", type=float, default=0.6, help="Probabilidade mínima para filtragem de detecções fracas")
 ap.add_argument("-s", "--skip-frames", type=int, default=30, help="Número de quadros a serem pulados entre detecções")
 args = vars(ap.parse_args())
 
 # Inicializa a lista de classificações que o algoritmo de rede de aprendizado profundo foi treinado para detectar
-CLASSES = ["background", "aeroplane", "bicycle", "bird", "boat",
-	"bottle", "bus", "car", "cat", "chair", "cow", "diningtable",
-	"dog", "horse", "motorbike", "person", "pottedplant", "sheep",
-	"sofa", "train", "tvmonitor"]
+CLASSES = [
+	"background",
+	"aeroplane",
+	"bicycle",
+	"bird",
+	"boat",
+	"bottle",
+	"bus",
+	"car",
+	"cat",
+	"chair",
+	"cow",
+	"diningtable",
+	"dog",
+	"horse",
+	"motorbike",
+	"person",
+	"pottedplant",
+	"sheep",
+	"sofa",
+	"train",
+	"tvmonitor"
+]
 
 # Carrega o modelo serializado informado pelos parâmetros
 print("[INFO] Carregando modelo...")
@@ -37,6 +56,11 @@ if not args.get("input", False):
 else:
 	print("[INFO] Abrindo arquivo de vídeo...")
 	vs = cv2.VideoCapture(args["input"])
+
+# Garante que nenhuma divisão por 0 será realizada
+if args["skip_frames"] == 0:
+	args["skip_frames"] = 1
+	print(args["skip_frames"])
 
 # Inicializa o gravador de vídeo - que será inicializado posteriormente se necessário
 writer = None 
